@@ -21,7 +21,7 @@ built around the [AI4I 2020 Predictive Maintenance dataset](https://archive.ics.
 ### 1. Clone / download the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/starkjiang/JD-Workshop-Interpretability-Demo.git
 cd jd_interpretability_demo
 ```
 

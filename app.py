@@ -209,7 +209,7 @@ st.markdown("---")
 # ── Part 1 — Black Box Prediction ────────────────────────────────────────────
 st.markdown('<div class="section-header">Part 1 — Prediction</div>', unsafe_allow_html=True)
 
-c1, c2, c3 = st.columns([2, 1, 1])
+c1, c2, c3 = st.columns([1, 1, 1])
 with c1:
     st.markdown(
         f"""
@@ -217,6 +217,15 @@ with c1:
             <p>Predicted Failure Probability</p>
             <h1>{risk_pct:.1f}%</h1>
             <p>{risk_emoji} {risk_label}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        f"""
+        <div class="metric-card">
+            <p>Process Temp</p>
+            <h1 style="font-size:1.6rem">{proc_temp:.1f} K</h1>
         </div>
         """,
         unsafe_allow_html=True,
